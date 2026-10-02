@@ -75,3 +75,10 @@ El árbol inicial se construye insertando, en este orden, las claves `50, 30, 20
 
 - **¿Cuál es el mínimo del subárbol cuya raíz es 70 en el árbol inicial?**  
   `60`.
+### Reflexiones Finales:
+
+¿Cómo ayuda el recorrido inorden a comprobar que el ABB conserva su estructura? 
+Explica con tus palabras el caso de eliminación que consideraste más difícil. 
+¿Qué papel cumple la recursividad en los métodos de búsqueda y eliminación? 
+¿Qué aprendiste sobre el cambio de referencias entre nodos al eliminar elementos? 
+Si tuvieras que explicar a un compañero la diferencia entre buscar y eliminar en un ABB, ¿qué le dirías? 
