@@ -75,10 +75,19 @@ El árbol inicial se construye insertando, en este orden, las claves `50, 30, 20
 
 - **¿Cuál es el mínimo del subárbol cuya raíz es 70 en el árbol inicial?**  
   `60`.
+  
 ### Reflexiones Finales:
 
-¿Cómo ayuda el recorrido inorden a comprobar que el ABB conserva su estructura? 
-Explica con tus palabras el caso de eliminación que consideraste más difícil. 
-¿Qué papel cumple la recursividad en los métodos de búsqueda y eliminación? 
-¿Qué aprendiste sobre el cambio de referencias entre nodos al eliminar elementos? 
+¿Cómo ayuda el recorrido inorden a comprobar que el ABB conserva su estructura?
+El recorrido inorden ayuda a comprobar que el ABB conserva su estructura porque lee primero el subárbol izquierdo, luego la raíz y después el derecho. Si el árbol está bien formado, la secuencia que se obtiene debe estar ordenada y confirma que cada nodo está colocado en el lugar correcto.
+
+El caso de eliminación que se me hizó más difícil fue cuando el nodo tiene dos hijos, porque hay que conservar ambos lados del subárbol y mantener la propiedad del ABB. Se tiene que buscar el menor valor del subárbol derecho, se copia su valor al nodo a eliminar y luego se elimina ese valor en su posición original. Se me hizo más complicado porque se reordenan las referencias sin perder nodos ni romper la estructura.
+
+¿Qué papel cumple la recursividad en los métodos de búsqueda y eliminación?
+En la búsqueda, la comparación con la raíz permite decidir si continuar por la izquierda o por la derecha. En la eliminación, la recursividad también hace que cada caso se resuelva localmente y después se retorne la referencia correcta al padre. Esto hace que el código sea más simple y que cada problema se reduzca a un caso menor, hasta llegar a una hoja o un valor nulo.
+
+¿Qué aprendiste sobre el cambio de referencias entre nodos al eliminar elementos?
+Aprendí que para eliminar un nodo no solo se puede quitar, se tienen que reasignar referencias y conservar la relación entre padre, hijo y orden de los datos. Tanto el valor del nodo como las conexiones cambian. Si esas referencias no se actualizan bien, el árbol puede quedar incompleto, con subárboles desconectados o con claves duplicadas. 
+
 Si tuvieras que explicar a un compañero la diferencia entre buscar y eliminar en un ABB, ¿qué le dirías? 
+Buscar solo lee y compara valores hasta encontrar el valor que buscas o terminar el recorrido. En cambio, en la eliminación se reestructura el árbol además de localizar el nodo, para que el árbol siga funcionando.
