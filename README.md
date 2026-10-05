@@ -75,6 +75,14 @@ El árbol inicial se construye insertando, en este orden, las claves `50, 30, 20
 
 - **¿Cuál es el mínimo del subárbol cuya raíz es 70 en el árbol inicial?**  
   `60`.
+
+### Diagrama del Árbol:
+
+        50
+       /  \
+      30   70
+     / \   / \
+   20  40 60 80
   
 ### Reflexiones Finales:
 
