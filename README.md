@@ -82,7 +82,7 @@ El árbol inicial se construye insertando, en este orden, las claves `50, 30, 20
        /  \
       30   70
      / \   / \
-   20  40 60 80
+    20  40 60 80
   
 ### Reflexiones Finales:
 
